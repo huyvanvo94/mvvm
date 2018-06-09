@@ -1,5 +1,5 @@
 //
-//  ToggleStateModel.h
+//  ToggleVMDelegate.h
 //  MVVM
 //
 //  Created by Huy Vo on 6/9/18.
@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ToggleStateModel : NSObject
-
-@property BOOL value;
+@protocol ToggleVMDelegate <NSObject>
 
 @end

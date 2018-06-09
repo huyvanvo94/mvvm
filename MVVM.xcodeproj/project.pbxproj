@@ -16,6 +16,7 @@
 		8FC794A320CBBE8500A16300 /* MVVMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC794A220CBBE8500A16300 /* MVVMTests.m */; };
 		8FC794AE20CBBE8500A16300 /* MVVMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC794AD20CBBE8500A16300 /* MVVMUITests.m */; };
 		8FC794BD20CBBEC700A16300 /* ToggleStateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC794BC20CBBEC700A16300 /* ToggleStateModel.m */; };
+		8FC794C020CBC18900A16300 /* ToggleViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC794BF20CBC18900A16300 /* ToggleViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,9 @@
 		8FC794AF20CBBE8500A16300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FC794BB20CBBEC700A16300 /* ToggleStateModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToggleStateModel.h; sourceTree = "<group>"; };
 		8FC794BC20CBBEC700A16300 /* ToggleStateModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToggleStateModel.m; sourceTree = "<group>"; };
+		8FC794BE20CBC18900A16300 /* ToggleViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToggleViewModel.h; sourceTree = "<group>"; };
+		8FC794BF20CBC18900A16300 /* ToggleViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToggleViewModel.m; sourceTree = "<group>"; };
+		8FC794C120CBC2EF00A16300 /* ToggleVMDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToggleVMDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +110,12 @@
 			children = (
 				8FC7948920CBBE8300A16300 /* AppDelegate.h */,
 				8FC7948A20CBBE8300A16300 /* AppDelegate.m */,
-				8FC7948C20CBBE8300A16300 /* ViewController.h */,
 				8FC794BB20CBBEC700A16300 /* ToggleStateModel.h */,
 				8FC794BC20CBBEC700A16300 /* ToggleStateModel.m */,
+				8FC794BE20CBC18900A16300 /* ToggleViewModel.h */,
+				8FC794BF20CBC18900A16300 /* ToggleViewModel.m */,
+				8FC794C120CBC2EF00A16300 /* ToggleVMDelegate.h */,
+				8FC7948C20CBBE8300A16300 /* ViewController.h */,
 				8FC7948D20CBBE8300A16300 /* ViewController.m */,
 				8FC7948F20CBBE8300A16300 /* Main.storyboard */,
 				8FC7949220CBBE8500A16300 /* Assets.xcassets */,
@@ -270,6 +277,7 @@
 				8FC7948E20CBBE8300A16300 /* ViewController.m in Sources */,
 				8FC794BD20CBBEC700A16300 /* ToggleStateModel.m in Sources */,
 				8FC7949920CBBE8500A16300 /* main.m in Sources */,
+				8FC794C020CBC18900A16300 /* ToggleViewModel.m in Sources */,
 				8FC7948B20CBBE8300A16300 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

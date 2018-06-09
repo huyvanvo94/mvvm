@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ToggleViewModel.h"
+
+@class ToggleViewModel; 
 
 @interface ViewController : UIViewController
-
+{
+    ToggleViewModel *tvm; 
+}
 
 @end
 
