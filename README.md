@@ -1,10 +1,10 @@
 ## Model View ViewModel 
 
-*Model* Classical model that holds business logic and run time data. 
+**Model** Classical model that holds business logic and run time data. 
 
-*View* Classical view. `View` should be dumb as possible.
+**View** Classical view. `View` should be dumb as possible.
 
-*ViewModel* Maps model to `Controller` in MVC 
+**ViewModel** Maps model to `Controller` in MVC 
 
 
 Why MVVM? When writing enterprise apps the controller will grow to a size that becomes hard to maintain; typically 
