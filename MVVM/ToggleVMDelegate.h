@@ -10,4 +10,6 @@
 
 @protocol ToggleVMDelegate <NSObject>
 
+- (void) setState: (NSString *) state;
+
 @end

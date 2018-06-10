@@ -16,20 +16,36 @@
 
 @implementation ToggleViewModel
 
+@synthesize delegate;
+
 - (instancetype)init
 {
     self = [super init];
     if (self) {
         self->tsm = [[ToggleStateModel alloc] init];
         [self->tsm setValue:YES];
+        if (delegate != nil){
+            [delegate setState:@"ON"];
+        }
     }
     return self;
+}
+
+- (void)setDelegate:(id <ToggleVMDelegate>) aDelegate {
+    NSLog(@"setDelegate");
+    if (delegate != aDelegate) {
+        delegate = aDelegate;
+        [delegate setState:[self getState]];
+    }
 }
 
 - (void) onClick{
     NSLog(@"ToggleViewModel onClick");
  
     [self->tsm setValue:! [self->tsm value]];
+    if(delegate != nil){
+        [delegate setState:[self getState]];
+    }
 }
 
 - (NSString *) getState{
@@ -39,7 +55,6 @@
         return @"ON";
     }else{
         return @"OFF";
-        
     }
 }
 

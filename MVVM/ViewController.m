@@ -18,8 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self->tvm = [[ToggleViewModel alloc] init];
-    NSLog(@"current state %@", [self->tvm getState]);
-    [_b setTitle:[self->tvm getState] forState:UIControlStateNormal];
+    [self->tvm setDelegate:self];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -32,9 +31,14 @@
 - (IBAction)onClick:(id)sender {
     NSLog(@"onClick");
     [self->tvm onClick];
-    [_b setTitle:[self->tvm getState] forState:UIControlStateNormal];
     
 }
 
+/**
+ Delegate
+ */
+- (void)setState:(NSString *)state{
+    [_b setTitle: state forState:UIControlStateNormal];
+}
 
 @end

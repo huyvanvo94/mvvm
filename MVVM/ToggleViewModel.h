@@ -8,14 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import "ToggleStateModel.h"
+#import "ToggleVMDelegate.h"
+
+@protocol ToggleVMDelegate;
 
 @class ToggleStateModel;
 
 @interface ToggleViewModel : NSObject
 {
     ToggleStateModel *tsm;
-  
 }
+
+@property (nonatomic, weak) id <ToggleVMDelegate> delegate;
 
 - (void) onClick;
 
